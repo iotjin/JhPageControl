@@ -32,7 +32,6 @@
 
 -(JhPageControl *)pageControl{
     if (!_pageControl) {
-        
         JhPageControl *pageControl = [[JhPageControl alloc] init];
         CGFloat pageControl_X = 0;
         CGFloat pageControl_Y = 100;
@@ -45,10 +44,8 @@
         pageControl.controlSpacing = 3.0;
         pageControl.marginSpacing = 10;  //距离初始位置 间距  默认10
         pageControl.controlSize = CGSizeMake(5, 5);//如果设置PageControlStyle,则失效
-        
         _pageControl =pageControl;
         [self.view addSubview:self.pageControl];
-        
     }
     return _pageControl;
 }
