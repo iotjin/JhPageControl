@@ -37,7 +37,7 @@
 
 - (void)initSetUp {
     self.backgroundColor = [UIColor clearColor];
-    _Jh_alignmentStyle = JhAlignmentStyleCenter;
+    _Jh_alignmentStyle = JhControlAlignmentStyleCenter;
     _Jh_marginSpacing = 12;
     _Jh_numberOfPages = 0;
     _Jh_currentPage = 0;
@@ -88,7 +88,7 @@
     [self createPointView];
 }
 
-- (void)setJh_alignmentStyle:(JhAlignmentStyle)Jh_alignmentStyle {
+- (void)setJh_alignmentStyle:(JhControlAlignmentStyle)Jh_alignmentStyle {
     if (_Jh_alignmentStyle == Jh_alignmentStyle) return;
     _Jh_alignmentStyle = Jh_alignmentStyle;
     [self createPointView];
@@ -161,9 +161,9 @@
     if (self.frame.size.width < mainWidth) {
         startX = 0;
     } else {
-        if (_Jh_alignmentStyle == JhAlignmentStyleLeft && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
+        if (_Jh_alignmentStyle == JhControlAlignmentStyleLeft && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
             startX = _Jh_marginSpacing;
-        } else if (_Jh_alignmentStyle == JhAlignmentStyleRight && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
+        } else if (_Jh_alignmentStyle == JhControlAlignmentStyleRight && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
             startX = (self.frame.size.width - mainWidth) - _Jh_marginSpacing;
         } else {
             startX = (self.frame.size.width - mainWidth) / 2;
@@ -224,9 +224,9 @@
     if (self.frame.size.width < mainWidth) {
         startX = 0;
     } else {
-        if (_Jh_alignmentStyle == JhAlignmentStyleLeft && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
+        if (_Jh_alignmentStyle == JhControlAlignmentStyleLeft && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
             startX = _Jh_marginSpacing;
-        } else if (_Jh_alignmentStyle == JhAlignmentStyleRight && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
+        } else if (_Jh_alignmentStyle == JhControlAlignmentStyleRight && self.frame.size.width - _Jh_marginSpacing * 2 > mainWidth) {
             startX = (self.frame.size.width - mainWidth) - _Jh_marginSpacing;
         } else {
             startX = (self.frame.size.width - mainWidth) / 2;

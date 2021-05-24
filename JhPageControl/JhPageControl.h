@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, JhAlignmentStyle) {
-    JhAlignmentStyleCenter = 0,
-    JhAlignmentStyleLeft,
-    JhAlignmentStyleRight,
+typedef NS_ENUM(NSUInteger, JhControlAlignmentStyle) {
+    JhControlAlignmentStyleCenter = 0,
+    JhControlAlignmentStyleLeft,
+    JhControlAlignmentStyleRight,
 };
 
 typedef NS_ENUM(NSInteger, JhPageControlStyle) {
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, JhPageControlStyle) {
 @interface JhPageControl : UIControl
 
 /** 位置 默认居中 */
-@property (nonatomic, assign) JhAlignmentStyle Jh_alignmentStyle;
+@property (nonatomic, assign) JhControlAlignmentStyle Jh_alignmentStyle;
 
 /** 滚动条样式 默认按照 controlSize 设置的值,如果controlSize未设置 则为大小为5的小圆点 */
 @property (nonatomic, assign) JhPageControlStyle Jh_pageControlStyle;
