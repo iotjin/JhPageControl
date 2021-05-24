@@ -21,7 +21,7 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
         pageControl.Jh_currentPage = 1;
         pageControl.Jh_otherColor = JhRandomColor;
         pageControl.Jh_currentColor = JhRandomColor;
-        pageControl.Jh_alignmentStyle = JhAlignmentStyleLeft; //设置对齐方式
+        pageControl.Jh_alignmentStyle = JhControlAlignmentStyleLeft; //设置对齐方式
         pageControl.Jh_controlSpacing = 3.0;
         pageControl.Jh_marginSpacing = 10;  //距离初始位置 间距  默认10
         pageControl.Jh_controlSize = CGSizeMake(5, 5);//如果设置Jh_pageControlStyle,则失效
@@ -53,7 +53,7 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
         pageControl.Jh_currentPage = 1;
         pageControl.Jh_otherColor = JhRandomColor;
         pageControl.Jh_currentColor = JhRandomColor;
-        pageControl.Jh_alignmentStyle = JhAlignmentStyleCenter; //设置对齐方式
+        pageControl.Jh_alignmentStyle = JhControlAlignmentStyleCenter; //设置对齐方式
         pageControl.Jh_controlSpacing = 5.0; //间距
         pageControl.Jh_marginSpacing = 0;  //距离初始位置 间距  默认10
         pageControl.Jh_pageControlStyle = JhPageControlStyelDotAndRectangle; //圆点 + 长条 样式
@@ -87,7 +87,7 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
         pageControl.Jh_currentPage = 1;
         pageControl.Jh_otherColor = JhRandomColor;
         pageControl.Jh_currentColor = JhRandomColor;
-        pageControl.Jh_alignmentStyle = JhAlignmentStyleRight; //设置对齐方式
+        pageControl.Jh_alignmentStyle = JhControlAlignmentStyleRight; //设置对齐方式
         pageControl.Jh_controlSpacing = 3.0;  //间距
         pageControl.Jh_marginSpacing = 10;  //距离初始位置 间距  默认10
         pageControl.Jh_pageControlStyle = JhPageControlStyelRectangle;//长条样式
