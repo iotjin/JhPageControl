@@ -7,7 +7,7 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
 
 * Demo1
 
-```
+```objc
 @property (nonatomic, strong)  JhPageControl *pageControl;
 
 - (JhPageControl *)pageControl {
@@ -32,15 +32,11 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
 }
 
     [self pageControl];
-  
-
-
 ```
 * Demo2
 
-```
+```objc
 @property (nonatomic, strong)  JhPageControl *pageControl2;
-
 
 - (JhPageControl *)pageControl2 {
     if (!_pageControl2) {
@@ -65,12 +61,10 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
 }
 
    [self pageControl2];
-  
-
 ```
 * Demo3
 
-```
+```objc
 @property (nonatomic, strong)  JhPageControl *pageControl3;
 
 - (JhPageControl *)pageControl3 {
@@ -99,13 +93,10 @@ JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可�
 
 
   [self pageControl3];
-  
-  
-
 ```
 * JhPageControlDelegate
 
-```
+```objc
 #pragma mark - JhPageControlDelegate
 - (void)JhPageControlClick:(JhPageControl*)pageControl index:(NSInteger)clickIndex {
     NSLog(@" clickIndex %zd ",clickIndex);
