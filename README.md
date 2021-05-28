@@ -1,4 +1,5 @@
 # JhPageControl
+
 JhPageControl - 多种样式pageControl(小圆点,长条,小圆点+长条),可自定义位置(左中右)和大小
 
 ![](https://raw.githubusercontent.com/iotjin/JhPageControl/master/JhPageControl/screenshots/1.gif)  <br> 
